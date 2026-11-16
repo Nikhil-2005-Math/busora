@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="busBodyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E88E5" />
+      <stop offset="60%" stop-color="#1565C0" />
+      <stop offset="100%" stop-color="#0D2B52" />
+    </linearGradient>
+    <linearGradient id="roofGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.85" />
+      <stop offset="70%" stop-color="#0284C7" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#0369A1" stop-opacity="0.98" />
+    </linearGradient>
+    <linearGradient id="wheelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="50%" stop-color="#0F172A" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC" />
+      <stop offset="60%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <!-- Drop Shadow -->
+    <filter id="busShadow" x="-5%" y="-5%" width="115%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#0D2B52" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Shadow under bus -->
+  <ellipse cx="400" cy="275" rx="360" ry="14" fill="#0F172A" opacity="0.25" />
+
+  <!-- Main Bus Group -->
+  <g filter="url(#busShadow)">
+    <!-- Roof AC Pod -->
+    <rect x="240" y="32" width="220" height="18" rx="8" fill="url(#roofGrad)" stroke="#CBD5E1" stroke-width="2" />
+    <line x1="280" y1="36" x2="280" y2="46" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    <line x1="310" y1="36" x2="310" y2="46" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    <line x1="340" y1="36" x2="340" y2="46" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    <line x1="370" y1="36" x2="370" y2="46" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+    <line x1="400" y1="36" x2="400" y2="46" stroke="#94A3B8" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Bus Main Outer Body Shell -->
+    <!-- Front is facing RIGHT -->
+    <path d="M 60 70 
+             C 60 55, 75 48, 100 48 
+             L 660 48 
+             C 710 48, 745 75, 755 125 
+             L 760 195 
+             C 762 225, 750 245, 725 245 
+             L 60 245 
+             C 45 245, 45 220, 45 190 
+             L 45 90 
+             C 45 75, 52 70, 60 70 Z" 
+          fill="url(#busBodyGrad)" stroke="#0D2B52" stroke-width="3" />
+
+    <!-- Roof White Cap Top Layer -->
+    <path d="M 60 70 
+             C 60 55, 75 48, 100 48 
+             L 660 48 
+             C 695 48, 725 65, 735 95 
+             L 50 95 
+             C 48 85, 52 75, 60 70 Z" 
+          fill="url(#roofGrad)" />
+
+    <!-- Decorative Kerala Swoosh Waves (White and Gold stripes) -->
+    <path d="M 45 195 Q 260 220, 480 185 T 755 180 L 758 198 Q 500 238, 260 205 L 45 210 Z" fill="#FFFFFF" opacity="0.9" />
+    <path d="M 45 212 Q 280 236, 510 200 T 750 198 L 748 206 Q 510 246, 270 218 L 45 220 Z" fill="#F59E0B" />
+
+    <!-- Branding Text on Bus Body -->
+    <text x="320" y="215" font-family="system-ui, sans-serif" font-size="22" font-weight="900" fill="#FFFFFF" letter-spacing="4">BUSORA</text>
+    <text x="440" y="215" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#E2E8F0" letter-spacing="1">KERALA EXPRESS</text>
+
+    <!-- Side Passenger Windows Row -->
+    <!-- Rear window -->
+    <rect x="70" y="98" width="55" height="60" rx="8" fill="url(#glassGrad)" stroke="#0F172A" stroke-width="2" />
+    <!-- Passenger windows -->
+    <rect x="135" y="98" width="75" height="60" rx="8" fill="url(#glassGrad)" stroke="#0F172A" stroke-width="2" />
+    <rect x="220" y="98" width="75" height="60" rx="8" fill="url(#glassGrad)" stroke="#0F172A" stroke-width="2" />
+    <rect x="305" y="98" width="75" height="60" rx="8" fill="url(#glassGrad)" stroke="#0F172A" stroke-width="2" />
+    <rect x="390" y="98" width="75" height="60" rx="8" fill="url(#glassGrad)" stroke="#0F172A" stroke-width="2" />
+    <rect x="475" y="98" width="75" height="60" rx="8" fill="url(#glassGrad)" stroke="#0F172A" stroke-width="2" />
+    <rect x="560" y="98" width="75" height="60" rx="8" fill="url(#glassGrad)" stroke="#0F172A" stroke-width="2" />
+
+    <!-- Window Light Reflection Line -->
+    <path d="M 72 108 L 633 108" stroke="#FFFFFF" stroke-width="2" stroke-opacity="0.5" stroke-linecap="round" />
+
+    <!-- Passenger Door at Front -->
+    <rect x="645" y="96" width="38" height="142" rx="6" fill="#0F172A" opacity="0.3" stroke="#CBD5E1" stroke-width="2" />
+    <rect x="649" y="100" width="30" height="58" rx="4" fill="url(#glassGrad)" />
+    <rect x="649" y="166" width="30" height="68" rx="4" fill="url(#glassGrad)" />
+    <line x1="664" y1="96" x2="664" y2="238" stroke="#CBD5E1" stroke-width="2" />
+
+    <!-- Front Windshield (Driver's cabin) -->
+    <path d="M 690 95 
+             L 735 95 
+             C 745 110, 752 135, 755 160 
+             L 690 160 Z" 
+          fill="url(#glassGrad)" stroke="#0F172A" stroke-width="2" />
+    <!-- Rearview Mirror (Kerala style outward curved) -->
+    <path d="M 728 85 Q 755 75, 765 105 L 758 120" fill="none" stroke="#0F172A" stroke-width="4" stroke-linecap="round" />
+    <rect x="758" y="95" width="10" height="26" rx="4" fill="#0F172A" />
+
+    <!-- Destination LED Board above Windshield -->
+    <rect x="668" y="65" width="75" height="22" rx="4" fill="#09090B" stroke="#F59E0B" stroke-width="1.5" />
+    <text x="705" y="80" font-family="system-ui, monospace" font-size="10" font-weight="bold" fill="#F59E0B" text-anchor="middle">തിരുവനന്തപുരം</text>
+
+    <!-- Headlight Unit & Indicators -->
+    <path d="M 750 200 C 758 200, 762 208, 762 220 L 744 220 Z" fill="#FEF08A" stroke="#CA8A04" stroke-width="1.5" />
+    <circle cx="754" cy="210" r="4" fill="#FFFFFF" />
+    <!-- Amber Turn Indicator -->
+    <rect x="742" y="222" width="14" height="6" rx="2" fill="#F59E0B" />
+    
+    <!-- Chrome Front Grille / Bumper -->
+    <path d="M 715 235 L 758 235 C 758 245, 750 250, 735 250 L 715 250 Z" fill="#94A3B8" />
+
+    <!-- Wheel Well Cutouts -->
+    <!-- Rear Wheel Well -->
+    <path d="M 120 245 A 50 50 0 0 1 230 245 Z" fill="#0F172A" />
+    <!-- Front Wheel Well -->
+    <path d="M 525 245 A 50 50 0 0 1 635 245 Z" fill="#0F172A" />
+
+    <!-- REAR WHEEL -->
+    <g class="wheel">
+      <circle cx="175" cy="245" r="45" fill="url(#wheelGrad)" stroke="#1E293B" stroke-width="3" />
+      <circle cx="175" cy="245" r="28" fill="url(#rimGrad)" stroke="#475569" stroke-width="2" />
+      <circle cx="175" cy="245" r="10" fill="#0F172A" />
+      <!-- Spokes -->
+      <line x1="175" y1="220" x2="175" y2="270" stroke="#64748B" stroke-width="3" />
+      <line x1="150" y1="245" x2="200" y2="245" stroke="#64748B" stroke-width="3" />
+      <line x1="157" y1="227" x2="193" y2="263" stroke="#64748B" stroke-width="2.5" />
+      <line x1="157" y1="263" x2="193" y2="227" stroke="#64748B" stroke-width="2.5" />
+    </g>
+
+    <!-- FRONT WHEEL -->
+    <g class="wheel">
+      <circle cx="580" cy="245" r="45" fill="url(#wheelGrad)" stroke="#1E293B" stroke-width="3" />
+      <circle cx="580" cy="245" r="28" fill="url(#rimGrad)" stroke="#475569" stroke-width="2" />
+      <circle cx="580" cy="245" r="10" fill="#0F172A" />
+      <!-- Spokes -->
+      <line x1="580" y1="220" x2="580" y2="270" stroke="#64748B" stroke-width="3" />
+      <line x1="555" y1="245" x2="605" y2="245" stroke="#64748B" stroke-width="3" />
+      <line x1="562" y1="227" x2="598" y2="263" stroke="#64748B" stroke-width="2.5" />
+      <line x1="562" y1="263" x2="598" y2="227" stroke="#64748B" stroke-width="2.5" />
+    </g>
+  </g>
+</svg>

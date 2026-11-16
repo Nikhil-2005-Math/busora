@@ -1,0 +1,6 @@
+stop_code,name,name_ml,district,locality,latitude,longitude,landmark
+KLP-02,Kallooppara Engineering College Stop,കല്ലൂപ്പാറ എഞ്ചിനീയറിംഗ് കോളേജ് സ്റ്റോപ്പ്,Pathanamthitta,Mallappally,9.3950,76.6210,Main College Gate
+TVL-03,Thiruvalla Railway Station Stop,തിരുവല്ല റെയിൽവേ സ്റ്റേഷൻ സ്റ്റോപ്പ്,Pathanamthitta,Thiruvalla,9.3880,76.5810,Near Platform 1 Exit
+CHG-02,Perunna Subramanya Swamy Temple Stop,പെരുന്ന സുബ്രഹ്മണ്യസ്വാമി ക്ഷേത്രം സ്റ്റോപ്പ്,Kottayam,Changanassery,9.4350,76.5430,Temple East Gate
+KTM-03,Kottayam Medical College Bypass,കോട്ടയം മെഡിക്കൽ കോളേജ് ബൈപ്പാസ്,Kottayam,Gandhinagar,9.6380,76.5250,Near MCH Gate 2
+COK-02,Edappally Metro Station Stop,ഇടപ്പള്ളി മെട്രോ സ്റ്റേഷൻ സ്റ്റോപ്പ്,Ernakulam,Kochi,10.0240,76.3080,Pillar 392
